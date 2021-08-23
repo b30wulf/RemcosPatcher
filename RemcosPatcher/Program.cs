@@ -8,6 +8,7 @@ namespace RemcosPatcher
         static byte[] ConsoleCall = { 0xE8, 0xE5, 0x9B, 0x00, 0x00 };
         static byte[] TrayIcon = { 0x57, 0x57, 0x57, 0x68, 0xF9, 0x2B, 0x41, 0x00, 0x57, 0x57, 0xFF, 0xD6 };
 
+        // https://stackoverflow.com/a/38625726/3658854
         static int Search(byte[] src, byte[] pattern)
         {
             int maxFirstCharSlot = src.Length - pattern.Length + 1;
