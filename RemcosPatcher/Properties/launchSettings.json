@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RemcosPatcher": {
+      "commandName": "Project",
+      "commandLineArgs": "remcos_a.exe"
+    }
+  }
+}
